@@ -1,0 +1,663 @@
+body{
+	font-family: "Arial";
+	font-size: 16px;
+	margin: 0; /*Убираем отступ заданный по умолчанию*/
+}
+
+*{
+	box-sizing: border-box; /*Это мы сделали, чтобы свойства width и height всех элементов включали в себя значения padding и border*/
+}
+
+.container{
+	width: 948px;
+	height: auto;
+	min-width: 948px;
+	margin: 0 auto;    /*Убрали отступы в нашем рабочем пространсве сверху и снизу и поставили auto для значений справа/слева,
+	 чтобы рабочее пространство выровнялось поцентру*/
+	position: relative;
+}
+
+.black{
+	height: 10px;
+	width: 100%;
+	background-color: #1d1e1b;
+}
+
+.grey{
+	height: 8px;
+	width: 100%;
+	background-color: #dcdddb;
+}
+
+/*Начало header*/
+.header{
+	height: 150px;
+}
+
+.header .logo{
+	float: left; /*Обтекание блока*/
+	margin-top: 45px;
+	margin-left: 37px;
+
+}
+
+.header .menu{
+	float: left;
+	margin-top: 59px;
+	margin-left: 85px; /*85 px Это отступ с учетом 14 px заданных padding для .header .menu ul li */
+
+}
+.header .menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;/*Убрали значки ненумерованного списка*/
+}
+
+.header .menu ul li{
+	padding: 0 14px;
+	display: inline-block; 
+}
+
+.header .menu ul li a{
+	text-transform: uppercase;
+	color: #3f3f3f;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.header .menu ul li a.active, .header .menu ul li a:hover{
+	color: #2c789c;
+}
+
+.header .faq{
+	position: absolute;
+	right: 8px;
+	top: -19px; 
+}
+
+ /*Конец header*/
+
+ /*Начало people*/
+
+.people{
+	height: 391px;
+}
+
+.people .left{
+	height: 310px; /*Тут мы задаем точное значения ширины равные нашему background-image*/
+	width: 467px;  /*тут мы задаем ширину равную отступу от рабогчей области до картинки + ширина картинки*/
+	background-image: url('../img/texts.png');
+	float: left;
+	background-position: right center;
+	background-repeat: no-repeat;
+	margin-top: 80px;
+	margin-left: 0;
+}
+
+.people .left p.first{
+	text-transform: uppercase;
+	font-size: 22.67px;
+	font-weight: bold;
+	margin-left: 31px;
+	margin-top: 146px;
+	margin-bottom: 6.835px;
+	color: #1d1e1b;
+}
+
+.people .left p.second{
+	margin-left: 182px;
+	margin-top: 0px;
+	color: #2c789c;
+}
+
+.people .right{
+	float: right;
+	margin-top: 8px;
+	margin-right: 22px;
+}
+
+/*Конец people*/
+
+/*Начало shape*/
+
+.shape{
+	height: 169px;
+}
+
+.shape .blue{
+	width: 306px;
+	height: 147px;
+	background-color: #2c789c;
+	background-image: url('../img/icon1.png');
+	background-repeat: no-repeat;
+	background-position: 251px 8px;
+	margin-top: 22px;
+	float: left;
+}
+
+.shape .orange{
+	width: 323px;
+	height: 147px;
+	margin-top: 18px;
+	background-color: #e5b00d;
+	background-image: url('../img/4.png');
+	background-position: -52px center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.shape .green{
+	width: 306px;
+	height: 147px;
+	margin-top: 18px;
+	background-color: #97ba15;
+	background-image: url('../img/5.png');
+	background-position: -50px center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.shape .blue h1{
+	font-size: 18.67px;
+	font-weight: normal;
+	color: #fff;
+	text-indent: 15px;
+	padding-top: 18px;
+	margin: 0;
+	line-height: 16px;
+}
+
+.shape .blue p{
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	margin: 0;
+	padding-left: 17px;
+	padding-right: 28px;
+	padding-top: 21px;
+	line-height: 16px;
+}
+
+.shape .blue button{
+	margin-left: 18px;
+	margin-top: 10px;
+	border-radius: 8px;
+	color: #7a7a7a;
+	background-color: #fff;
+	width: 99px;
+	height: 26px;
+	border:0;
+	font-size: 16px;
+}
+
+.shape .orange h1{
+	font-size: 18.67px;
+	font-weight: normal;
+	color: #fff;
+	text-indent: 22px;
+	padding-top: 18px;
+	margin: 0;
+	float: left;
+	line-height: 16px;
+}
+
+.shape .orange p{
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	padding-left: 32px;
+	padding-top: 1px;
+	margin:0;
+	line-height: 16px;
+}
+
+.shape .orange button{
+	border-radius: 8px;
+	color: #7a7a7a;
+	background-color: #fff;
+	margin-top: 10px;
+	margin-left: 31px;
+	width: 99px;
+	height: 26px;
+	border:0;
+	font-size: 16px;
+}
+
+.shape .orange img{
+	margin-top: 10px;
+	margin-left: 26px;
+}
+
+.shape .green h1{
+	font-size: 18.67px;
+	font-weight: normal;
+	color: #fff;
+	text-indent: 27px;
+	padding-top: 18px;
+	margin: 0;
+	float: left;
+	line-height: 16px;
+}
+
+.shape .green p{
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 32px;
+	line-height: 16px;
+}
+
+.shape .green button{
+	border-radius: 8px;
+	color: #7a7a7a;
+	background-color: #fff;
+	width: 99px;
+	height: 26px;
+	border:0;
+	margin-left: 31px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.shape .green img{
+	margin-top: 10px;
+	margin-left: 138px;
+}
+
+/*Конец shape*/
+
+/*Начало forma*/
+
+.forma{
+	height: 273px;
+}
+
+.forma .container{
+	padding: 22px 26px 30px 17px;
+	height: 100%;
+}
+
+.forma .left{
+	float: left;
+	margin: 0;
+	height: 220px;
+	width: 601px;
+}
+
+.forma h3{
+	margin: 0;
+	font-size: 24px;
+	color: #000;
+	font-weight: normal;
+	line-height: 16px;
+
+}
+
+.forma h4{
+	margin: 0;
+	line-height: 16px;
+	color: #000;
+	text-indent: 3px;
+	font-weight: normal;
+	padding-top: 16px;
+}
+
+.forma p{
+	margin: 0;
+	line-height: 16px;
+	color: #7b7d78;
+	text-indent: 4px;
+	padding-top: 22px;
+
+}
+
+.forma .left button{
+	border:0;
+	border-radius: 8px;
+	height: 26px;
+	width: 99px;
+	font-size: 16px;
+	background-color: #1d1e1b;
+	color: #cacac9;
+	line-height: 16px;
+	margin-top: 24px;
+}
+
+.forma .right{
+	float: left;
+	margin: 0;
+	margin-left: 39px;
+	width: 265px;
+}
+.forma input{
+	margin-top: 7px;
+	margin-bottom: 5px;
+	height: 34px;
+	width: 100%;
+	text-indent: 16px;
+	border: 1px solid #d3d3d3;
+	color: #d3d3d3;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.forma input.submit{
+	margin-top: 35px;
+	border:0;
+	padding: 0;
+	border-radius: 8px;
+	height: 26px;
+	width: 99px;
+	font-size: 16px;
+	background-color: #1d1e1b;
+	color: #cacac9;
+	line-height: 16px;
+	text-indent: 0px;
+}
+
+/*конец forma*/
+
+/*начало planning*/
+
+.planning{
+	height: 430px;
+	background-color: #1d1e1b;
+	
+}
+
+.planning .container{
+	padding: 17px 0 15px 0;
+	height: 100%;
+
+}
+
+.planning .left{
+	margin: 0;
+	height: 398px;
+	width: 289px;
+	float: left;
+}
+
+.planning .center{
+	margin: 0;
+	margin-left: 40px;
+	height: 398px;
+	width: 289px;
+	float: left;
+}
+
+.planning .right{
+	margin: 0;
+	float: left;
+	height: 398px;
+	width: 292px;
+	margin-left: 38px;
+	
+}
+
+.planning h3{
+	margin: 0;
+	display: inline-block;
+	font-size: 18.67px;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.planning span{
+	font-size: 16px;
+	color: #2c789c;
+	text-transform: none;
+	display: inline-block;
+	padding-left: 20px;
+
+}
+
+.planning .left img, .planning .center img{
+	margin-top: 8px;
+}
+
+.planning p{
+	margin: 0;
+	font-size: 13.34px;
+	color: #7d8179;
+	line-height: 13.34px;
+	display: inline-block;
+	padding-top: 10px;
+}
+.planning .left button{
+	margin: 0;
+	border: 0;
+	height: 26px;
+	width: 99px;
+	background-color: #2c789c;
+	color: #ccd9e2;
+	border-radius: 8px;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.planning .center button{
+	margin: 0;
+	border: 0;
+	height: 26px;
+	width: 99px;
+	background-color: #2c789c;
+	color: #ccd9e2;
+	border-radius: 8px;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.planning .right .one, .planning .right .two, .planning .right .three{
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 34px;
+}
+
+.planning .right img{
+	position: absolute;
+
+}
+
+.planning h4{
+	display: inline-block;
+	margin: 0;
+	font-size: 14.67px;
+	color: #fff;
+	font-weight: normal;
+	margin-left: 124px;
+
+}
+
+.planning .right p{
+	font-family: 'Arial Narrow', arial;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 13.34px;
+	color: #7d8179;
+	line-height: 16px;
+	margin-left: 124px;
+
+}
+
+.planning .right a{
+	margin: 0;
+	margin-top: 6px;
+	margin-left: 123px;
+	font-family: 'Arial Narrow', arial;
+	font-size: 13.34px;
+	line-height: 16px;
+	color: #2c789c;
+
+}
+
+/*Конец planning*/
+
+/*Начало about*/
+
+.about{
+	height: 216px;
+	background-color: #2e302c;
+}
+
+.about .container{
+	
+	height: 100%;
+	padding: 18px 0 34px 0;
+}
+
+.about .left{
+	height: 164px;
+	width: 289px;
+	float: left;
+	margin: 0;
+}
+
+.about .center{
+	height: 164px;
+	width: 277px;
+	float: left;
+	margin: 0;
+	margin-left: 41px;
+}
+
+.about .right{
+	height: 164px;
+	width: 292px;
+	float: left;
+	margin: 0;
+	margin-left: 41px;
+}
+
+.about h3{
+	margin: 0;
+	font-size: 18.67px;
+	line-height: 18.67px;
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.about p{
+	margin: 0;
+	margin-top: 9px;
+	font-family: 'Arial Narrow', arial;
+	font-size: 13.34px;
+	color: #7f847b;
+	line-height: 13.34px;
+}
+
+.about h5{
+	margin: 0;
+	font-weight: normal;
+	line-height: 16px;
+	margin-left: 1px;
+	margin-top: 12px;
+	color: #2c6d8b;
+}
+
+.about ul{
+	margin: 0;
+	list-style: url('../img/liststyle.png');
+	font-family: 'Arial Narrow', arial;
+	font-size: 13.34px;
+	line-height: 32px;
+	color: #7f847b;
+	padding-left: 35px;
+}
+
+.about .right ul{
+	padding-top: 15px;
+}
+
+/*конец about*/
+
+/*начало footer*/
+
+.footer{
+	height: 154px;
+	background-color: #1d1e1b;
+}
+
+.footer .container{
+	height: 100%; 
+	padding: 61px 0 23px 0;
+}
+
+.footer .left{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 70px;
+	width: 289px;
+
+}
+.footer .left p{
+	font-size: 13.34px;
+	color: #9b9d99;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-top: 21px;
+	margin-left: 1px;
+}
+
+.footer .right{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 70px;
+	width: 659px;
+}
+
+.footer .menu{
+	float: left;
+	width: 100%;
+
+}
+.footer .menu ul{
+	margin: 0;
+	margin-left: 221.5px;
+	padding: 0;
+	list-style: none;/*Убрали значки ненумерованного списка*/
+}
+
+.footer .menu ul li{
+	padding: 0;
+	padding-left: 23px;
+	display: inline-block; 
+}
+
+.footer .menu ul li a{
+	text-transform: uppercase;
+	color: #7c8078;
+	text-decoration: none;
+	font-size: 13.34px;
+}
+
+.footer .menu ul li a.active, .header .menu ul li a:hover{
+	color: #2c789c;
+}
+
+.footer .links{
+	margin: 0;
+	padding: 0;
+	margin-top: 31px;
+	margin-left: 510px;
+	height: 21px;
+	width: 659px;
+}
+.footer .links a{
+	margin:0;
+	padding:0; 
+}
+
+.footer .links img{
+	filter: grayscale(100%);
+}
+
+/*конец footer*/
